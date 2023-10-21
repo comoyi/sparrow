@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/comoyi/sparrow/cmd"
 
 func main() {
-	fmt.Printf("Hello\n")
+	cmd.Execute()
 }

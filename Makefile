@@ -12,7 +12,7 @@ build-run:
 
 .PHONY: build
 build:
-	go build \
+	CGO_ENABLED=0 go build \
 	-trimpath \
 	-o target/linux/$(X_APP_NAME) main.go
 	cp config/config.yml target/linux/
