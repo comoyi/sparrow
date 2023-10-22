@@ -12,8 +12,10 @@ import (
 var Conf *Config
 
 type Config struct {
-	Env  string
-	Port int
+	Env       string
+	Port      int
+	PprofHost string `mapstructure:"pprof_host"`
+	PprofPort int    `mapstructure:"pprof_port"`
 }
 
 func InitConfig() error {

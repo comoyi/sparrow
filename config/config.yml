@@ -1,2 +1,4 @@
 env: dev
 port: 8080
+pprof_host: localhost
+pprof_port: 6060
